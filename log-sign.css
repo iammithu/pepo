@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap');
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/pexels-lisa-fotios-1957478.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container, form{
+    display: flex;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: bold;
+    
+    flex-direction: column;
+}
+.container{
+    align-items: center;
+    box-shadow: 1px 1px 8px rgb(38, 216, 163);
+    background-color: rgba(130, 173, 190, 0.39);
+    padding: 30px;
+    min-width: 300px;
+    width: fit-content;
+    margin-top: 8vh;
+    border-radius: 20px;
+    color: rgb(8, 5, 5);
+    backdrop-filter: blur(8px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+form div{
+    margin: 5px;
+    margin-bottom: 20px;
+}
+input{
+    width: 280px;
+    
+}
+
+input:focus + label,
+input:valid + label{
+    top: -50px;
+}
+
+input[type=text]{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px dotted rgb(138, 71, 71);
+    outline: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 1.2px;
+    color: rgb(36, 33, 33);
+    font-family: "Kalam", cursive;
+    padding: 2px;
+    font-size: large;
+    text-align: center;
+}
+input[type=password]{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px dotted rgb(138, 71, 71);
+    outline: none;
+    background-color: transparent;
+    font-family: "Kalam", cursive;
+    padding: 1px;
+    font-size: large;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: blue;
+}
+#team-acc{
+    font-size: 10px;
+}
+#passkey{
+    letter-spacing: 12px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+button[type=submit]{
+    margin: 20px;
+    width: 180px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 4px black;
+    margin-left: 20%;
+    background-color: bisque;
+    font-size: 17px;
+    padding: 10px;
+}
+button[type=submit]:hover{
+    background-color: rgb(78, 212, 129);
+    transition: .15s;
+}
+a{
+    color: black;
+}
+input::placeholder{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+/* @media screen and (max-width:1300px){
+    body{
+        background-size: 150%;
+        background-position: start;
+    }
+} */
